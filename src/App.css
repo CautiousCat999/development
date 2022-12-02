@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.Title {
+  border: 5px solid #b11226;
+  background-color: lightpink;
+}
+
+.Cart{
+  border: 5px solid darkgray;
+  background-color: lightgrey;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
