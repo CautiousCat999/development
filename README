@@ -1,0 +1,8 @@
+1. The goal of the Winery application is to allow a user to favorite the wines they like from a directory. 
+2. Deployment link: https://cautiouscat999.github.io/development/
+3. I have a WineBottle component which easily lists the name, type, country, price, and image of the wines
+that fit the search criteria. It uses the cart and price state as props in order to update them when the 
+wines are added to the favorites list. 
+4. For hierarchy, I wanted to keep everything vertical so that the user has an easy to follow path on the 
+site. For layout, I kept everything centered and a set 50% of the screen width so that it's easily
+adaptable to different screen sizes.  
