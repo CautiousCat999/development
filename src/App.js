@@ -100,13 +100,10 @@ function App() {
     return sortedData
   }
 
- 
-   
-
-
   return (
     <div className="App">
-      <div className="Title"><h1>The Winery</h1></div>
+      <div className="Title"><h1>Max's Wine Cellar</h1></div>
+      <div className="Filters">
       <h4>
         <p><u>Type</u></p>
         <input type="checkbox" id="red" name="red" value="red" onClick={() => handleFilter("Red")}></input>
@@ -130,11 +127,14 @@ function App() {
         <button onClick={sortAscClick}>Sort Price Low to High</button><br/>
         <button onClick={sortDescClick}>Sort Price High to Low</button>
       </h4>
+      </div>
+      <div className ="Body">
       {displayData.map((item, index) => (
         <p><WineBottle name={item.name} country={item.country} type={item.type} price={item.price} image={item.image} onClick={() => {
           handleClick(item.name, item.price)
         }}/></p>
       ))}
+      </div>
 
       <div className="Cart">
         <h2>Favorites</h2>
